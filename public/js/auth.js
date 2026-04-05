@@ -1,4 +1,4 @@
-const API_URL = 'https://YOUR-APP.onrender.com'; // ЗАМЕНИ НА СВОЮ ССЫЛКУ!
+const API_URL = 'https://bembelebe-it.onrender.com'; // ЗАМЕНИ НА СВОЮ ССЫЛКУ!
 
 const form = document.getElementById('auth-form');
 const title = document.getElementById('auth-title');
