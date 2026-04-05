@@ -1,4 +1,4 @@
-const API_URL = 'https://YOUR-APP.onrender.com'; // ЗАМЕНИ НА СВОЮ ССЫЛКУ С RENDER!
+const API_URL = 'https://bembelebe-it.onrender.com'; // ЗАМЕНИ НА СВОЮ ССЫЛКУ С RENDER!
 const token = localStorage.getItem('token');
 const user = JSON.parse(localStorage.getItem('user') || 'null');
 
