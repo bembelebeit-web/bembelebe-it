@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280">
+    <title>Bembelebe IT - Forum</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                Bembelebe IT
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Docs</a>
+                <a href="forum.html" class="nav-link active">Forum</a>
+            </div>
+            <div class="profile-widget" id="profile-widget">
+                <button class="btn btn-primary" onclick="location.href='auth.html'">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="forum-header">
+            <h1 class="forum-title">Forum</h1>
+            <button class="btn btn-primary" id="new-topic-btn">New Topic</button>
+        </div>
+        <div id="topics-list" class="topics-list"></div>
+    </div>
+
+    <div class="modal-overlay" id="new-topic-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <div class="modal-title">Create Topic</div>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Title</label>
+                <input type="text" id="topic-title" class="form-input">
+            </div>
+            <div class="form-group">
+                <label class="form-label">Content</label>
+                <textarea id="topic-content" class="form-input form-textarea"></textarea>
+            </div>
+            <div style="display:flex;justify-content:flex-end;gap:12px;">
+                <button class="btn modal-close">Cancel</button>
+                <button class="btn btn-primary" id="submit-topic">Publish</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/forum.js"></script>
+</body>
+</html>

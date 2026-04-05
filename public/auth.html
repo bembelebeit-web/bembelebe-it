@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280">
+    <title>Login - Bembelebe IT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="logo" style="justify-content: center; margin-bottom: 32px;">
+            <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+            Bembelebe IT
+        </div>
+        
+        <div class="auth-title" id="auth-title">Login</div>
+        
+        <form id="auth-form">
+            <div class="form-group">
+                <label class="form-label">Username</label>
+                <input type="text" id="username" class="form-input" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Password</label>
+                <input type="password" id="password" class="form-input" required>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 16px;">Login</button>
+        </form>
+        
+        <div style="margin-top: 16px; text-align: center; font-size: 13px;">
+            <span id="switch-text">No account?</span>
+            <a href="#" id="switch-link" style="color: var(--text-primary);">Register</a>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

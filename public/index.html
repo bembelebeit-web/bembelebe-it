@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1280">
+    <title>Bembelebe IT - Шпаргалки</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+                Bembelebe IT
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Docs</a>
+                <a href="forum.html" class="nav-link">Forum</a>
+            </div>
+            <div class="profile-widget" id="profile-widget">
+                <button class="btn btn-primary" onclick="location.href='auth.html'">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="grid">
+            <aside class="sidebar">
+                <ul class="menu-list">
+                    <li><button class="menu-btn active" data-sec="linux">Linux</button></li>
+                    <li><button class="menu-btn" data-sec="net">Network</button></li>
+                    <li><button class="menu-btn" data-sec="docker">Docker</button></li>
+                </ul>
+            </aside>
+
+            <main class="main">
+                <div class="header-row">
+                    <h1 class="page-title">Docs</h1>
+                    <div class="search-box">
+                        <input type="search" id="search" class="search-input" placeholder="Search...">
+                    </div>
+                </div>
+
+                <section id="linux" class="section active">
+                    <article class="cmd-card">
+                        <div class="cmd-header">
+                            <div class="cmd-title">Process Search</div>
+                            <div class="cmd-actions">
+                                <button class="icon-btn copy-btn">Copy</button>
+                            </div>
+                        </div>
+                        <div class="cmd-body">
+                            <pre class="cmd-code">ps aux | grep &lt;name&gt;
+pgrep -a &lt;name&gt;</pre>
+                        </div>
+                    </article>
+                </section>
+
+                <section id="net" class="section">
+                    <article class="cmd-card">
+                        <div class="cmd-header">
+                            <div class="cmd-title">CIDR Cheat Sheet</div>
+                            <div class="cmd-actions">
+                                <button class="icon-btn copy-btn">Copy</button>
+                            </div>
+                        </div>
+                        <div class="cmd-body">
+                            <pre class="cmd-code">/24 → 254 hosts
+/16 → 65534 hosts</pre>
+                        </div>
+                    </article>
+                </section>
+
+                <section id="docker" class="section">
+                    <article class="cmd-card">
+                        <div class="cmd-header">
+                            <div class="cmd-title">Docker Basics</div>
+                            <div class="cmd-actions">
+                                <button class="icon-btn copy-btn">Copy</button>
+                            </div>
+                        </div>
+                        <div class="cmd-body">
+                            <pre class="cmd-code">docker ps -a
+docker logs -f &lt;id&gt;</pre>
+                        </div>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
